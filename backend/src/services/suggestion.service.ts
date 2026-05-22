@@ -10,7 +10,7 @@ export const generateSuggestions = ({
 
     const suggestions: string[] = [];
 
-    // Low ATS Score
+  
     if (score < 40) {
 
         suggestions.push(
@@ -22,7 +22,6 @@ export const generateSuggestions = ({
         );
     }
 
-    // Medium Score
     if (score >= 40 && score < 70) {
 
         suggestions.push(
@@ -34,7 +33,7 @@ export const generateSuggestions = ({
         );
     }
 
-    // High Score
+
     if (score >= 70) {
 
         suggestions.push(
@@ -46,7 +45,7 @@ export const generateSuggestions = ({
         );
     }
 
-    // Missing Keywords
+
     if (missingKeywords.length > 0) {
 
         const topMissingKeywords =
@@ -59,7 +58,7 @@ export const generateSuggestions = ({
         );
     }
 
-    // Large Skill Gap
+
     if (missingKeywords.length > 10) {
 
         suggestions.push(
@@ -71,7 +70,7 @@ export const generateSuggestions = ({
         );
     }
 
-    // General ATS Suggestions
+
     suggestions.push(
         "Use a simple single-column resume layout for better ATS readability."
     );

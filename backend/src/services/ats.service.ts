@@ -25,14 +25,13 @@ export const analyzeResumeService = (
 
     console.log("jobDescription ", jobDescription)
     console.log("resumeText ", resumeText)
-    // Extract keywords
+
     const resumeKeywords =
         extractKeywords(resumeText);
 
     const jobKeywords =
         extractKeywords(jobDescription);
 
-    // Calculate score
     const {
         score,
         matchedKeywords,
@@ -42,7 +41,7 @@ export const analyzeResumeService = (
         jobKeywords
     );
 
-    // Suggestions
+
     const suggestions =
         generateSuggestions(
             { missingKeywords, score }

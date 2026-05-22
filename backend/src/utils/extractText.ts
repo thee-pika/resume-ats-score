@@ -5,7 +5,7 @@ const extractText = async (
     file: Express.Multer.File
 ): Promise<string> => {
 
-    // DOCX
+
     if (
         file.mimetype ===
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
@@ -19,7 +19,7 @@ const extractText = async (
         return result.value;
     }
 
-    // PDF
+
     if (file.mimetype === "application/pdf") {
 
         return new Promise(

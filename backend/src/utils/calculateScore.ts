@@ -9,22 +9,20 @@ const calculateScore = (
 
     const jd = jobDescription.toLowerCase();
 
-    // Find skills inside job description
+   
     const jdSkills = skills.filter((skill) =>
         jd.includes(skill)
     );
 
-    // Skills matched in resume
+
     const matchedSkills = jdSkills.filter((skill) =>
         resume.includes(skill)
     );
-
-    // Missing skills
     const missingSkills = jdSkills.filter(
         (skill) => !resume.includes(skill)
     );
 
-    // Score calculation
+    
     let score = 0;
 
     if (jdSkills.length > 0) {
@@ -33,7 +31,7 @@ const calculateScore = (
             100;
     }
 
-    // Resume Sections Check
+
     const sections = [
         "education",
         "experience",
@@ -45,15 +43,15 @@ const calculateScore = (
         (section) => resume.includes(section)
     );
 
-    // Add section bonus
+  
     score += foundSections.length * 5;
 
-    // Max score = 100
+
     if (score > 100) {
         score = 100;
     }
 
-    // Suggestions
+
     const suggestions = [];
 
     if (missingSkills.length > 0) {

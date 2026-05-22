@@ -1,6 +1,6 @@
 const SKILLS = [
 
-    // Frontend
+
     "react",
     "next.js",
     "typescript",
@@ -8,7 +8,7 @@ const SKILLS = [
     "redux",
     "tailwind css",
 
-    // Backend
+
     "node.js",
     "nodejs",
     "express",
@@ -16,28 +16,28 @@ const SKILLS = [
     "nestjs",
     "golang",
 
-    // Databases
+
     "mongodb",
     "postgresql",
     "mysql",
     "redis",
 
-    // Cloud / DevOps
+
     "docker",
     "kubernetes",
     "aws",
     "nginx",
 
-    // Messaging
+
     "kafka",
     "rabbitmq",
 
-    // Architecture
+
     "microservices",
     "rest api",
     "graphql",
 
-    // General
+
     "mern",
     "full-stack",
 ];
