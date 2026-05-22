@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+
+    "types": ["bun"],
+
+    "skipLibCheck": true,
+
+    "outDir": "./dist",
+    "rootDir": "./src",
+
+    "allowSyntheticDefaultImports": true,
+     "esModuleInterop": true
+  },
+
+  "include": ["src"]
+}
